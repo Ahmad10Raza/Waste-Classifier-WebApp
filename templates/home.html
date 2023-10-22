@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Classifier Webapp</title>
+    <style>
+        /* Add your CSS styles here to customize the appearance of the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        nav {
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#classifier">Classifier</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container" id="home">
+        <h1>Welcome to the Waste Classifier Webapp</h1>
+        <p>This webapp helps you classify different types of waste.</p>
+        <!-- Add more content and interactive features here for the home page -->
+    </div>
+
+    <div class="container" id="classifier">
+        <h2>Waste Classifier</h2>
+        <form action="classifier_endpoint.php" method="post" enctype="multipart/form-data">
+            <label for="image">Upload an image of waste:</label>
+            <input type="file" name="image" id="image" accept="image/*">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact</h2>
+        <p>Connect with me on:</p>
+        <p><a href="https://github.com/your-github">GitHub</a></p>
+        <p><a href="https://linkedin.com/in/your-linkedin">LinkedIn</a></p>
+    </div>
+</body>
+</html>
