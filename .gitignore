@@ -3,6 +3,8 @@
 *.pb
 *.png
 *.tflite
+*.hdf5
+*.h5
 
 
 # Byte-compiled / optimized / DLL files
